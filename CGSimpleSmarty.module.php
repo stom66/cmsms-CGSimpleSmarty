@@ -88,7 +88,7 @@ class CGSimpleSmarty extends CMSModule
     /*
      * Create a link to an anchor further down the page.
      */
-    function plugin_anchorlink($params,&$smarty)
+    function plugin_anchorlink($params,$smarty)
     {
         $name = get_parameter_value($params,'n');
         $name = get_parameter_value($params,'name',$name);
@@ -123,7 +123,7 @@ class CGSimpleSmarty extends CMSModule
         }
     }
 
-    function plugin_setvar($params,&$samrty)
+    function plugin_setvar($params,$samrty)
     {
         foreach( $params as $key => $val ) {
             $key = trim($key);
@@ -136,7 +136,7 @@ class CGSimpleSmarty extends CMSModule
         }
     }
 
-    function plugin_unsetvar($params,&$smarty)
+    function plugin_unsetvar($params,$smarty)
     {
         foreach( $params as $key => $val ) {
             $key = trim($key);
@@ -157,7 +157,7 @@ class CGSimpleSmarty extends CMSModule
         }
     }
 
-    function plugin_getvar($params,&$smarty)
+    function plugin_getvar($params,$smarty)
     {
         $key = \cge_param::get_string($params,'v');
         $key = \cge_param::get_string($params,'var',$key);
