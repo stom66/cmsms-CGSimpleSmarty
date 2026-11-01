@@ -1,4 +1,10 @@
 <ul>
+<li>2.2.2 - November, 2026
+   <ul>
+   <li>Fork release by stom66.</li>
+   <li>Take $smarty by value in plugin callbacks for PHP 8.</li>
+   </ul>
+</li>
 <li>2.2.1 - December, 2018
    <ul>
    <li>Minor improvement (v2.3 compatibility) for module_action_link.</li>

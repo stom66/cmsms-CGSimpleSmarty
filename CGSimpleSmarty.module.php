@@ -72,7 +72,7 @@ class CGSimpleSmarty extends CMSModule
 
     function GetName() { return 'CGSimpleSmarty'; }
     function GetFriendlyName() { return $this->Lang('friendlyname'); }
-    function GetVersion() { return '2.2.1'; }
+    function GetVersion() { return '2.2.2'; }
     function MinimumCMSVersion() { return '2.1.4'; }
     function GetHelp() { return file_get_contents(__DIR__.'/help.inc'); }
     function GetAuthor() { return 'calguy1000'; }
