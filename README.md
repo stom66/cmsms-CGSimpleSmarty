@@ -47,7 +47,7 @@ target folder when cloning:
 # new install of the fork into a site
 cd /path/to/site/modules
 mv CGSimpleSmarty CGSimpleSmarty.orig          # keep the old copy until verified, then delete it
-git clone https://github.com/<owner>/cmsms-CGSimpleSmarty.git CGSimpleSmarty
+git clone https://github.com/stom66/cmsms-CGSimpleSmarty.git CGSimpleSmarty
 
 # later updates
 cd /path/to/site/modules/CGSimpleSmarty && git pull
