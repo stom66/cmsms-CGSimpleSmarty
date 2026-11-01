@@ -1,4 +1,6 @@
-# CGSimpleSmarty (maintained fork)
+# cmsms-CGSimpleSmarty
+
+Maintained fork of the **CGSimpleSmarty** module for CMS Made Simple.
 
 Calguy's Simple Smarty Tools: the `{cgsimple::…}` helpers (page relationships, parent/child/sibling lookups, page content, file listings) plus `{module_action_link}`, `{module_action_url}`, `{cgrepeat}`, `{session_put}`, `{anchor_link}`, `{setvar}`, `{getvar}` and `{unsetvar}`.
 
@@ -37,13 +39,15 @@ repository's commits (and tags, when made) instead.
 
 ## Installing / updating a site
 
-The folder name must be exactly `CGSimpleSmarty`.
+The repository is called `cmsms-CGSimpleSmarty`, but the module folder inside a site must be
+named exactly **`CGSimpleSmarty`** (CMSMS finds modules by folder name), so always give the
+target folder when cloning:
 
 ```sh
 # new install of the fork into a site
 cd /path/to/site/modules
 mv CGSimpleSmarty CGSimpleSmarty.orig          # keep the old copy until verified, then delete it
-git clone <this-repository-url> CGSimpleSmarty
+git clone https://github.com/<owner>/cmsms-CGSimpleSmarty.git CGSimpleSmarty
 
 # later updates
 cd /path/to/site/modules/CGSimpleSmarty && git pull
